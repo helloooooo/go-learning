@@ -5,6 +5,6 @@ import (
 	"net/http"
 )
 
-func home(w http.ResponseWriter, _ *htto.Request) {
+func home(w http.ResponseWriter, _ *http.Request) {
 	fmt.Fprint(w, "Hello! Your request was processed")
 }

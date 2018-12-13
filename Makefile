@@ -1,9 +1,9 @@
 APP?=learning
 PORT?=8000
 RELEASE?=0.0.1
-COMMIT?=$(shell get rev-parse --short HEAD)
+COMMIT?=$(shell git rev-parse --short HEAD)
 PROJECT?=github.com/helloooooo/go-learning
-BUILD_TIME?=$(shell date -u `+%Y-%m-%d_%H:%M:%S`)
+BUILD_TIME?=$(shell date -u '+%Y-%m-%d_%H:%M:%S')
 clean:
 	rm -f ${APP}
 

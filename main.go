@@ -7,7 +7,8 @@ import (
 
 	"github.com/helloooooo/go-learning/version"
 
-	"github.com/helloooooo/go-learning/handlers"
+	// "github.com/helloooooo/go-learning/handlers"
+	"./handlers"
 )
 
 func main() {

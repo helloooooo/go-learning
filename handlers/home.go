@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"../version"
+	"github.com/helloooooo/go-learning/version"
 )
 
 type versionInfo struct {

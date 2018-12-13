@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"./version"
+	"github.com/helloooooo/go-learning/version"
 
 	"github.com/helloooooo/go-learning/handlers"
 )

@@ -1,16 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
 	"log"
-	
+	"net/http"
+	"os"
+
 	"github.com/helloooooo/go-learning/handlers"
 )
 
-func main()  {
+func main() {
 	log.Print("Starting the service")
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("Port is not set")
+	}
 	router := handlers.Router()
 	log.Print("The service is ready to listen and serve")
-	log.Fatal(http.ListenAndServe(":8000", router))
+	log.Fatal(http.ListenAndServe(":"+port, router))
 }

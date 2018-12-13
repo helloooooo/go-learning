@@ -5,10 +5,16 @@ import (
 	"net/http"
 	"os"
 
+	"./version"
+
 	"github.com/helloooooo/go-learning/handlers"
 )
 
 func main() {
+	log.Printf(
+		"Starting the service... commit: %s ,build time:%s , release: %s ",
+		version.Commit, version.BuildTime, version.Release,
+	)
 	log.Print("Starting the service")
 	port := os.Getenv("PORT")
 	if port == "" {
